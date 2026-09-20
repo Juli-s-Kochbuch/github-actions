@@ -83,6 +83,7 @@ jobs:
         run: |
           cat > public/update.json <<EOF
           {
+            "slug": "${{ needs.read-theme-json.outputs.slug }}",
             "version": "${{ needs.read-theme-json.outputs.version }}",
             "download_url": "https://github.com/${{ github.repository }}/releases/latest/download/theme.zip"
           }
