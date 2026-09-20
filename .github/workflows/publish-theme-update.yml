@@ -25,7 +25,7 @@ jobs:
           fetch-depth: 2
       - name: Parse theme.json
         id: parse-theme-json
-        uses: Juli-s-Kochbuch/github-actions/.github/actions/get-theme-meta-data@main
+        uses: Julis-Kochbuch/github-actions/.github/actions/get-theme-meta-data@main
 
   create-release:
     name: Create Release
