@@ -84,7 +84,7 @@ jobs:
           cat > public/update.json <<EOF
           {
             "version": "${{ needs.read-theme-json.outputs.version }}",
-            "download_url": "https://github.com/${{ github.repository }}/releases/latest/download/theme.zip",
+            "download_url": "https://github.com/${{ github.repository }}/releases/latest/download/theme.zip"
           }
           EOF
       - name: Upload artifact
@@ -123,4 +123,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
       - run: |
-          echo update.json successfully updated: ${{ steps.deployment.outputs.page_url }}/update.json
+          echo update.json successfully updated: ${{ steps.deployment.outputs.page_url }}update.json
