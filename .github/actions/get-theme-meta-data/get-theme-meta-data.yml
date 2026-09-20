@@ -1,0 +1,14 @@
+name: Parse theme.json
+description: Extracts Kochbuch theme metadata
+
+outputs:
+  slug:
+    description: The theme slug
+  version:
+    description: The version of the theme
+  changed:
+    description: Whether version changed
+
+runs:
+  using: node24
+  main: main.js
